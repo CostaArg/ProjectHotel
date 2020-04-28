@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="app.js"></script>
+    <title>Booking</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="blue-box">
+        
+        <div class="first-row-container">
+          <span class="material-icons grey-icons search-icon">
+            search
+          </span>
+          <input
+            type="search"
+            class="searchbar"
+            placeholder="Search a location"
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </div>
+
+        
+
+        <div class="second-row-container">
+          <div class="check-in-item">
+            <div class="blue-bar"></div>
+            <span class="material-icons grey-icons calendar-icons">
+              today
+            </span>
+            <input
+              class="date-button"
+              type="text"
+              placeholder="Check-in"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+            <span class="material-icons grey-icons arrow-icons">
+              keyboard_arrow_left
+            </span>
+            <span class="material-icons grey-icons arrow-icons">
+              keyboard_arrow_right
+            </span>
+          </div>
+
+          <div class="check-out-item">
+            <div class="orange-bar"></div>
+            <span class="material-icons grey-icons calendar-icons">
+              event
+            </span>
+            <input
+              class="date-button"
+              type="text"
+              placeholder="Check-out"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+            <span class="material-icons grey-icons arrow-icons">
+              keyboard_arrow_left
+            </span>
+            <span class="material-icons grey-icons arrow-icons">
+              keyboard_arrow_right
+            </span>
+          </div>
+
+          <div class="room-item">
+            <select class="room-button">
+              <option selected="selected"> Family rooms </option>
+              <option>Single rooms</option>
+              <option>Double rooms</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- <div class="slider-container">
+          <div class="left-tag">
+            Price
+          </div>
+          <div class="right-tag">
+            Max 1000$
+          </div>
+
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+          />
+        </div> -->
+
+<!-- <div>
+  <div>Property type</div>
+
+  <select class="prop-type">
+    <option selected="selected"> All </option>
+    <option>0 Stars</option>
+    <option>1 Stars</option>
+    <option>2 Stars</option>
+    <option>3 Stars</option>
+    <option>4 Stars</option>
+    <option>5 Stars</option>
+  </select>
+</div>
+
+<div>
+  <div>Guesting rating</div>
+  <select class="guest-rating">
+    <option selected="selected"> All </option>
+    <option>0-2 Okay</option>
+    <option>2-6 Fair</option>
+    <option>6-7 Good</option>
+    <option>7-8.5 Very Good</option>
+    <option>8.5-10 Excellent</option>
+  </select>
+</div> -->
+
+
+      </div>
+
+      <!-- <div class="gray-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.413517911088!2d2.307820398575437!3d48.8693930211266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc4f8007851%3A0x5aa1a787f38f64f6!2sAv.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2sgr!4v1587728550096!5m2!1sen!2sgr"
+          width="146"
+          height="46"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+
+        <div>Sort by</div>
+
+        <select>
+          <option selected="selected"> Our Recommendations </option>
+        </select>
+      </div> -->
+    </div>
+  </body>
+</html>
