@@ -8,10 +8,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <title>Booking</title>
   </head>
   <body>
+  <p>Value: <span id="currentPrice"></span></p>
     <div class="form-container">
       <div class="blue-header">
         <div class="first-row-container">
@@ -86,7 +88,7 @@
                 Price
               </div>
               <div class="right-tag">
-                Max 1000$
+                Max
               </div>
             </div>
 
@@ -98,7 +100,7 @@
                 value="100"
                 class="slider"
                 id="myRange"
-              />
+              >
             </div>
           </div>
 
@@ -191,6 +193,10 @@
             </span>
           </div>
         </div>
+      </div>
+
+      <div class="hotel-container">
+        <div class="hotel-item"></div>
       </div>
     </div>
   </body>
