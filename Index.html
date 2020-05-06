@@ -9,11 +9,9 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="app.js"></script>
     <title>Booking</title>
   </head>
   <body>
-  <p>Value: <span id="currentPrice"></span></p>
     <div class="form-container">
       <div class="blue-header">
         <div class="first-row-container">
@@ -44,7 +42,7 @@
             <span class="material-icons sidearrow-icons">
               keyboard_arrow_left
             </span>
-            <span class="material-icons sidearrow-icons">
+            <span class="material-icons sidearrow-icons smooth-right">
               keyboard_arrow_right
             </span>
           </div>
@@ -64,16 +62,16 @@
             <span class="material-icons sidearrow-icons">
               keyboard_arrow_left
             </span>
-            <span class="material-icons sidearrow-icons">
+            <span class="material-icons sidearrow-icons smooth-right">
               keyboard_arrow_right
             </span>
           </div>
 
           <div class="room-item">
-            <span class="material-icons people-icons">
-              people
+            <span class="material-icons people-icons smooth-left">
+              people_outline
             </span>
-            <select class="room-button">
+            <select class="room-button smooth-right">
               <option selected="selected"> Family rooms </option>
               <option>Single rooms</option>
               <option>Double rooms</option>
@@ -88,7 +86,7 @@
                 Price
               </div>
               <div class="right-tag">
-                Max
+                max. $<div id="currentPrice"></div>
               </div>
             </div>
 
@@ -129,7 +127,7 @@
           <div class="vertical-bar"></div>
 
           <div class="guest-container">
-            <div class="guest-tag">Guesting rating</div>
+            <div class="guest-tag">Guest rating</div>
 
             <div class="selection-item">
               <select class="guest-button">
@@ -201,3 +199,4 @@
     </div>
   </body>
 </html>
+<script src="app.js"></script>

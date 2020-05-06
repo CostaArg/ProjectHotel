@@ -4,17 +4,18 @@
   justify-content: center;
   margin-left: 25%;
   margin-right: 25%;
-  width: 720px;
+  width: 1000px;
 }
 
 .blue-header {
   display: flex;
   flex-direction: column;
   background-color: #37454d;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border-color: #37454d;
 }
 
 .gray-header {
@@ -27,33 +28,38 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 1%;
+  width: 100%;
 }
 
 .second-row-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 1%;
+  width: 100%;
 }
 
 .third-row-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 1%;
+  width: 100%;
 }
 
 .check-in-item {
   display: flex;
   margin-right: 10px;
+  width: 33%;
 }
 
 .check-out-item {
   display: flex;
   margin-right: 10px;
+  width: 33%;
 }
 
 .room-item {
   display: flex;
-  margin-right: 10px;
+  width: 33%;
 }
 
 .material-icons {
@@ -83,13 +89,13 @@
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
-  flex-grow: 1;
+  width: 100%;
   border: white;
 }
 
 .date-button {
   display: flex;
-  width: 150px;
+  width: 80%;
   background-color: white;
   color: #37454d;
   font-weight: bold;
@@ -106,8 +112,7 @@
   font-size: 14px;
   border: none;
   cursor: pointer;
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 100%;
 }
 
 .property-button {
@@ -120,17 +125,19 @@
   padding-left: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-right: 25%;
+  padding-right: 50%;
   text-align: left;
   margin-top: 5%;
 }
 
 .property-tag {
   color: #dbdedf;
+  font-weight: bolder;
 }
 
 .guest-tag {
   color: #dbdedf;
+  font-weight: bolder;
 }
 
 .location-container {
@@ -141,6 +148,7 @@
 
 .location-tag {
   color: #dbdedf;
+  font-weight: bolder;
 }
 
 .location-button {
@@ -153,7 +161,7 @@
   padding-left: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-right: 25%;
+  padding-right: 20%;
   text-align: left;
   margin-top: 5%;
 }
@@ -193,7 +201,7 @@
   padding-left: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-right: 1%;
+  padding-right: 5%;
   text-align: left;
   margin-top: 5%;
 }
@@ -202,6 +210,7 @@
   display: flex;
   flex-direction: row;
   color: #dbdedf;
+  font-weight: bolder;
 }
 
 .right-tag {
@@ -221,7 +230,7 @@
 .slider-container {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 32%;
   margin-bottom: 1%;
 }
 
@@ -289,11 +298,23 @@
   padding-bottom: 10px;
 }
 
+.smooth-right {
+  display: flex;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.smooth-left {
+  display: flex;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
 .people-icons {
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 100px;
 }
 
 .downarrow-icons {
@@ -315,7 +336,7 @@
 .guest-container {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 14%;
 }
 
 select {
@@ -330,12 +351,12 @@ select {
 }
 
 .sort-by-container {
-display: flex;
-flex-direction: row;
-margin-left: auto;
-margin-top: 1%;
-margin-bottom: 1%;
-margin-right: 4%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 4%;
 }
 
 .sort-by-tag {
