@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
     <title>Booking</title>
   </head>
   <body>
@@ -23,7 +27,7 @@
             class="searchbar"
             placeholder="Search a location"
           />
-          <input type="submit" class="search-button" value="Search" />
+          <input type="submit" class="search-btn" value="Search" />
         </div>
 
         <div class="second-row-container">
@@ -33,7 +37,7 @@
               today
             </span>
             <input
-              class="date-button"
+              class="date-btn"
               type="text"
               placeholder="Check-in"
               onfocus="(this.type='date')"
@@ -53,7 +57,7 @@
               event
             </span>
             <input
-              class="date-button"
+              class="date-btn"
               type="text"
               placeholder="Check-out"
               onfocus="(this.type='date')"
@@ -71,7 +75,7 @@
             <span class="material-icons people-icons smooth-left">
               people_outline
             </span>
-            <select class="room-button smooth-right">
+            <select class="room-btn smooth-right">
               <option selected="selected"> Family rooms </option>
               <option>Single rooms</option>
               <option>Double rooms</option>
@@ -86,7 +90,8 @@
                 Price
               </div>
               <div class="right-tag">
-                max. $<div id="currentPrice"></div>
+                max. $
+                <div id="currentPrice"></div>
               </div>
             </div>
 
@@ -98,7 +103,7 @@
                 value="100"
                 class="slider"
                 id="myRange"
-              >
+              />
             </div>
           </div>
 
@@ -108,7 +113,7 @@
             <div class="property-tag">Property type</div>
 
             <div class="selection-item">
-              <select class="property-button">
+              <select class="property-btn">
                 <option selected="selected"> All </option>
                 <option>0 Stars</option>
                 <option>1 Stars</option>
@@ -130,7 +135,7 @@
             <div class="guest-tag">Guest rating</div>
 
             <div class="selection-item">
-              <select class="guest-button">
+              <select class="guest-btn">
                 <option selected="selected"> All </option>
                 <option>0-2 Okay</option>
                 <option>2-6 Fair</option>
@@ -151,7 +156,7 @@
             <div class="location-tag">Hotel location</div>
 
             <div class="selection-item">
-              <select class="location-button">
+              <select class="location-btn">
                 <option selected="selected"> Champs Ely... </option>
               </select>
 
@@ -163,8 +168,8 @@
         </div>
       </div>
 
-      <div class="gray-header">
-        <div class="gray-header-container">
+      <div class="gray-header-container">
+        <div class="gray-header-item">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.413517911088!2d2.307820398575437!3d48.8693930211266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc4f8007851%3A0x5aa1a787f38f64f6!2sAv.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2sgr!4v1587728550096!5m2!1sen!2sgr"
             width="146"
@@ -174,12 +179,13 @@
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
+            class="map"
           ></iframe>
 
           <div class="sort-by-container">
             <div class="sort-by-tag">Sort by</div>
 
-            <select class="sort-by-button">
+            <select class="sort-by-btn">
               <option selected="selected"> Our Recommendations </option>
             </select>
 
@@ -194,7 +200,37 @@
       </div>
 
       <div class="hotel-container">
-        <div class="hotel-item"></div>
+        <div class="hotel-item">
+          <img
+            class="hotel-image"
+            src="https://www.galaxy-hotel.com/_storageWeb_/n/13787692174255/ig/8197764293500/b/692033667068/isk/homeWide/drz-galaxy_Q1A7537zz_result-compressor.jpeg"
+            alt="hotel"
+          />
+          <div class="hotel-description-container">
+            <div class="hotel-title">Hotel Superwow</div>
+            <div class="hotel-stars">5 Star Hotel</div>
+            <div class="guest-rating-container">
+              <div class="guest-rating smooth-left smooth-right">8.8</div>
+              <div class="rating-text">Excellent</div>
+            </div>
+            <div class="hotel-rating">Excellent Location (9.2 / 10)</div>
+          </div>
+          <div class="vertical-bar-big"></div>
+          <div class="price-section-container">
+            <div class="price-container">
+              <div class="price-text">Price</div>
+              <div class="price">$706</div>
+            </div>
+            <div class="price-btn-container">
+              <div class="price-btn smooth-left">View Deal</div>
+              <span
+                class="material-icons sidearrow-icons smooth-right green-side-arrow"
+              >
+                keyboard_arrow_right
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
