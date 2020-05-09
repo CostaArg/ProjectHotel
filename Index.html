@@ -16,37 +16,42 @@
     <title>Booking</title>
   </head>
   <body>
+
     <div class="form-container">
       <div class="blue-header">
-        <div class="first-row-container">
-          <span class="material-icons search-icon">
-            search
-          </span>
-          <input
-            type="search"
-            class="searchbar"
-            placeholder="Search a location"
-          />
+        <div class="search-bar">
+          <div class="search-item">
+            <span class="material-icons search-icon">
+              search
+            </span>
+            <input
+              type="search"
+              class="search-input"
+              placeholder="Search a location"
+            />
+          </div>
           <input type="submit" class="search-btn" value="Search" />
         </div>
+        <div class="suggestions"></div>
 
         <div class="second-row-container">
           <div class="check-in-item">
             <div class="blue-bar"></div>
-            <span class="material-icons calendar-icons">
+            <span id="icon1" class="material-icons calendar-icons">
               today
             </span>
             <input
+              id="check-in-input"
               class="date-btn"
               type="text"
               placeholder="Check-in"
               onfocus="(this.type='date')"
               onblur="(this.type='text')"
             />
-            <span class="material-icons sidearrow-icons">
+            <span id="icon2" class="material-icons sidearrow-icons">
               keyboard_arrow_left
             </span>
-            <span class="material-icons sidearrow-icons smooth-right">
+            <span id="icon3" class="material-icons sidearrow-icons smooth-right">
               keyboard_arrow_right
             </span>
           </div>
@@ -75,10 +80,10 @@
             <span class="material-icons people-icons smooth-left">
               people_outline
             </span>
-            <select class="room-btn smooth-right">
-              <option selected="selected"> Family rooms </option>
+            <select id="rooms" class="room-btn smooth-right">
+              <!-- <option selected="selected"> Family rooms </option>
               <option>Single rooms</option>
-              <option>Double rooms</option>
+              <option>Double rooms</option> -->
             </select>
           </div>
         </div>
@@ -199,7 +204,7 @@
         </div>
       </div>
 
-      <div class="hotel-container">
+      <div id="hotels" class="hotel-container">
         <div class="hotel-item">
           <img
             class="hotel-image"

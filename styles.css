@@ -107,16 +107,10 @@ body {
   font-weight: bold;
 }
 
-.first-row-container {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1%;
-  width: 100%;
-}
-
 .second-row-container {
   display: flex;
   flex-direction: row;
+  margin-top: 1%;
   margin-bottom: 1%;
   width: 100%;
 }
@@ -153,6 +147,12 @@ body {
   cursor: default;
 }
 
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .search-btn {
   display: flex;
   background-color: #007fad;
@@ -167,7 +167,7 @@ body {
   cursor: pointer;
 }
 
-.searchbar {
+.search-input {
   display: flex;
   padding-left: 1%;
   padding-top: 1%;
@@ -175,6 +175,29 @@ body {
   padding-right: 1%;
   width: 100%;
   border: white;
+}
+
+.suggestions {
+  display: none;
+  background-color: white;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-left: 50px;
+  margin-right: 145px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.suggestions:hover {
+background-color: #007fad;
+color: white;
+}
+
+.search-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
 }
 
 .date-btn {
@@ -511,7 +534,7 @@ select {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  margin-left: 80px;
+  margin-left: 85px;
 }
 
 .price-btn {
