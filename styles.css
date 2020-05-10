@@ -70,6 +70,7 @@ body {
 .hotel-description-container {
   display: flex;
   flex-direction: column;
+  width: 220px;
 }
 
 .hotel-stars {
@@ -176,6 +177,7 @@ body {
   padding-right: 1%;
   width: 100%;
   border: white;
+  font-size: 16px;
 }
 
 .suggestions {
