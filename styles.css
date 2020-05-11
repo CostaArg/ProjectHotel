@@ -73,10 +73,22 @@ body {
   width: 220px;
 }
 
-.hotel-stars {
+.hotel-stars-container {
   display: flex;
   margin-left: 15px;
   margin-top: 10px;
+}
+
+.hotel-stars-text {
+  display: flex;
+  margin-left: 6px;
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+.star {
+  display: flex;
+  color: #f6ab3f;
 }
 
 .hotel-rating {
@@ -193,8 +205,8 @@ body {
 }
 
 .suggestions:hover {
-background-color: #007fad;
-color: white;
+  background-color: #007fad;
+  color: white;
 }
 
 .search-item {

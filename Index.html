@@ -29,7 +29,12 @@
               placeholder="Search a location"
             />
           </div>
-          <input id="search-btn" type="submit" class="search-btn" value="Search" />
+          <input
+            id="search-btn"
+            type="submit"
+            class="search-btn"
+            value="Search"
+          />
         </div>
         <div class="suggestions"></div>
 
@@ -50,7 +55,10 @@
             <span id="icon2" class="material-icons sidearrow-icons">
               keyboard_arrow_left
             </span>
-            <span id="icon3" class="material-icons sidearrow-icons smooth-right">
+            <span
+              id="icon3"
+              class="material-icons sidearrow-icons smooth-right"
+            >
               keyboard_arrow_right
             </span>
           </div>
@@ -160,8 +168,8 @@
             <div class="location-tag">Hotel location</div>
 
             <div class="selection-item">
-              <select class="location-btn">
-                <option selected="selected"> Champs Ely... </option>
+              <select id="location-btn" class="location-btn">
+                <!-- <option selected="selected"> Champs Ely... </option> -->
               </select>
 
               <span class="material-icons white-icons downarrow-icons">
@@ -175,22 +183,22 @@
       <div class="gray-header-container">
         <div class="gray-header-item">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.413517911088!2d2.307820398575437!3d48.8693930211266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc4f8007851%3A0x5aa1a787f38f64f6!2sAv.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2sgr!4v1587728550096!5m2!1sen!2sgr"
-            width="146"
-            height="46"
-            frameborder="0"
-            style="border: 0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-            class="map"
-          ></iframe>
+          width="146"
+          height="46"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          class="map"
+          id="map"
+        ></iframe>
 
           <div class="sort-by-container">
             <div class="sort-by-tag">Sort by</div>
 
-            <select class="sort-by-btn">
-              <option selected="selected"> Our Recommendations </option>
+            <select id="sort-by-btn" class="sort-by-btn">
+              <option selected="selected">Our Recommendations</option>
             </select>
 
             <span class="material-icons sort-downarrow">
