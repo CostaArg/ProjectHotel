@@ -324,7 +324,6 @@ $(document).ready(function () {
     }
 
     function RefreshHotels() {
-      var maxPrice = 0;
       var idCounter = 0;
 
       for (var i in response) {
@@ -336,6 +335,12 @@ $(document).ready(function () {
 
           if (searchInput.value === jsonCity) {
             AppendHotel();
+            ShowPrice();
+          }
+
+          function ShowPrice() {
+            var rightTag = document.getElementById("right-tag");
+            rightTag.style.display = "flex";
           }
 
           function AppendHotel() {

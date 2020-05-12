@@ -347,7 +347,7 @@ body {
 }
 
 .right-tag {
-  display: flex;
+  display: none;
   flex-direction: row;
   color: #dbdedf;
   margin-left: auto;
@@ -535,7 +535,7 @@ select {
   display: flex;
   color: #498913;
   font-size: 18px;
-  margin-left: 5px;
+  align-self: center;
 }
 
 .price {
@@ -549,7 +549,7 @@ select {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  margin-left: 85px;
+  align-self: center;
 }
 
 .price-btn {
