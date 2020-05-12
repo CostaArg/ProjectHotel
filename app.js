@@ -289,6 +289,26 @@ $(document).ready(function () {
             filterId = "filter" + idCounter;
             filterDiv.setAttribute("id", filterId);
 
+            var heartId = "heart" + idCounter;
+
+            var heartContainer = document.createElement("div");
+            heartContainer.setAttribute("class", "heart-container");
+
+            var heartInput = document.createElement("input");
+            heartInput.setAttribute("id", heartId);
+            heartInput.setAttribute("type", "checkbox");
+
+            var heartLabel = document.createElement("label");
+            heartLabel.setAttribute("for", heartId);
+            heartLabel.innerHTML = "❤";
+
+            var imageNumber = document.createElement("div");
+            imageNumber.setAttribute("class", "image-number");
+            imageNumber.innerHTML = "1 / 30";
+
+            heartContainer.appendChild(heartInput);
+            heartContainer.appendChild(heartLabel);
+
             guestRatingContainer.appendChild(guestRating);
             guestRatingContainer.appendChild(ratingText);
 
@@ -314,6 +334,8 @@ $(document).ready(function () {
             hotelItem.appendChild(bar);
             hotelItem.appendChild(priceSectionContainer);
             hotelItem.appendChild(filterDiv);
+            hotelItem.appendChild(heartContainer);
+            hotelItem.appendChild(imageNumber);
 
             hotelContainer.appendChild(hotelItem);
           }
@@ -409,7 +431,12 @@ $(document).ready(function () {
               "class",
               "guest-rating smooth-left smooth-right"
             );
+
             guestRating.innerHTML = jsonRating;
+
+            if (Number.isInteger(jsonRating)) {
+              guestRating.innerHTML = jsonRating + ".0";
+            }
 
             var ratingText = document.createElement("div");
             ratingText.setAttribute("class", "rating-text");
@@ -466,6 +493,22 @@ $(document).ready(function () {
             filterId = "filter" + idCounter;
             filterDiv.setAttribute("id", filterId);
 
+            var heartId = "heart" + idCounter;
+
+            var heartContainer = document.createElement("div");
+            heartContainer.setAttribute("class", "heart-container");
+
+            var heartInput = document.createElement("input");
+            heartInput.setAttribute("id", heartId);
+            heartInput.setAttribute("type", "checkbox");
+
+            var heartLabel = document.createElement("label");
+            heartLabel.setAttribute("for", heartId);
+            heartLabel.innerHTML = "❤";
+
+            heartContainer.appendChild(heartInput);
+            heartContainer.appendChild(heartLabel);
+
             guestRatingContainer.appendChild(guestRating);
             guestRatingContainer.appendChild(ratingText);
 
@@ -491,6 +534,7 @@ $(document).ready(function () {
             hotelItem.appendChild(bar);
             hotelItem.appendChild(priceSectionContainer);
             hotelItem.appendChild(filterDiv);
+            hotelItem.appendChild(heartContainer);
 
             hotelContainer.appendChild(hotelItem);
           }

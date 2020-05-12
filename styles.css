@@ -586,6 +586,21 @@ select {
   flex-direction: column;
 }
 
+.image-number {
+  display: flex;
+  position: absolute;
+  background-color: #484947;
+  color: white;
+  padding: 7px;
+  margin-top: 200px;
+  margin-left: 10px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  opacity: 0.8;
+}
+
 .heart-container {
   display: flex;
   position: absolute;
@@ -598,7 +613,7 @@ select {
 }
 
 [for="heart1"] {
-  color: white;
+  color: lightgray;
   cursor: pointer;
   font-size: 2.5em;
   align-self: center;
@@ -607,7 +622,7 @@ select {
 }
 
 [for="heart1"]:hover {
-  color: grey;
+  color: gray;
 }
 
 [for="heart1"]::selection {
@@ -628,6 +643,132 @@ select {
 }
 
 @keyframes heart1 {
+  0%,
+  17.5% {
+    font-size: 0;
+  }
+}
+
+[id="heart2"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart2"] {
+  color: lightgray;
+  cursor: pointer;
+  font-size: 2.5em;
+  align-self: center;
+  transition: color 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+[for="heart2"]:hover {
+  color: gray;
+}
+
+[for="heart2"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart2"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart2"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart2 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+  opacity: 1;
+}
+
+@keyframes heart2 {
+  0%,
+  17.5% {
+    font-size: 0;
+  }
+}
+
+[id="heart3"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart3"] {
+  color: lightgray;
+  cursor: pointer;
+  font-size: 2.5em;
+  align-self: center;
+  transition: color 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+[for="heart3"]:hover {
+  color: gray;
+}
+
+[for="heart3"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart3"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart3"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart3 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+  opacity: 1;
+}
+
+@keyframes heart3 {
+  0%,
+  17.5% {
+    font-size: 0;
+  }
+}
+
+[id="heart4"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart4"] {
+  color: lightgray;
+  cursor: pointer;
+  font-size: 2.5em;
+  align-self: center;
+  transition: color 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+[for="heart4"]:hover {
+  color: gray;
+}
+
+[for="heart4"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart4"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart4"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart4 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+  opacity: 1;
+}
+
+@keyframes heart4 {
   0%,
   17.5% {
     font-size: 0;
