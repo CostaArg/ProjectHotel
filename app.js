@@ -114,6 +114,10 @@ $(document).ready(function () {
       RemoveSuggestions();
     });
 
+    ClearHotels();
+    LoadHotels();
+    LoadMap();
+
     $("#search-btn").click(function () {
       ClearHotels();
       LoadHotels();
@@ -161,7 +165,7 @@ $(document).ready(function () {
           var jsonCity = entries[j].city;
           var jsonPrice = entries[j].price;
 
-          if (searchInput.value === jsonCity) {
+          if (searchInput.value === jsonCity || searchInput.value === "") {
             AppendHotel();
             GetMax();
             AppendMax();
@@ -226,13 +230,18 @@ $(document).ready(function () {
             );
             guestRating.innerHTML = jsonRating;
 
+            if (Number.isInteger(jsonRating)) {
+              guestRating.innerHTML = jsonRating + ".0";
+            }
+
             var ratingText = document.createElement("div");
             ratingText.setAttribute("class", "rating-text");
             ratingText.innerHTML = jsonRatingText;
 
             var hotelRating = document.createElement("div");
             hotelRating.setAttribute("class", "hotel-rating");
-            hotelRating.innerHTML = "Excellent Location (" + jsonGuestRating + " / 10)";
+            hotelRating.innerHTML =
+              "Excellent Location (" + jsonGuestRating + " / 10)";
 
             var bar = document.createElement("div");
             bar.setAttribute("class", "vertical-bar-big");
@@ -333,7 +342,7 @@ $(document).ready(function () {
           var jsonCity = entries[j].city;
           var jsonPrice = entries[j].price;
 
-          if (searchInput.value === jsonCity) {
+          if (searchInput.value === jsonCity || searchInput.value === "") {
             AppendHotel();
             ShowPrice();
           }
@@ -408,7 +417,8 @@ $(document).ready(function () {
 
             var hotelRating = document.createElement("div");
             hotelRating.setAttribute("class", "hotel-rating");
-            hotelRating.innerHTML = "Excellent Location (" + jsonGuestRating + " / 10)";
+            hotelRating.innerHTML =
+              "Excellent Location (" + jsonGuestRating + " / 10)";
 
             var bar = document.createElement("div");
             bar.setAttribute("class", "vertical-bar-big");
@@ -535,6 +545,28 @@ $(document).ready(function () {
 
         if (Number(secondPriceNumber) > currentSliderValue) {
           secondPrice.parentNode.parentNode.parentNode.remove();
+        }
+      }
+
+      var thirdPrice = document.getElementById("price3");
+
+      if (thirdPrice !== null) {
+        var thirdPriceNumberWithDollar = thirdPrice.innerHTML;
+        var thirdPriceNumber = thirdPriceNumberWithDollar.substring(1);
+
+        if (Number(thirdPriceNumber) > currentSliderValue) {
+          thirdPrice.parentNode.parentNode.parentNode.remove();
+        }
+      }
+
+      var fourthPrice = document.getElementById("price4");
+
+      if (fourthPrice !== null) {
+        var fourthPriceNumberWithDollar = fourthPrice.innerHTML;
+        var fourthPriceNumber = fourthPriceNumberWithDollar.substring(1);
+
+        if (Number(fourthPriceNumber) > currentSliderValue) {
+          fourthPrice.parentNode.parentNode.parentNode.remove();
         }
       }
     }

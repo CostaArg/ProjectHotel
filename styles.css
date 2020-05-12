@@ -585,3 +585,51 @@ select {
   display: flex;
   flex-direction: column;
 }
+
+.heart-container {
+  display: flex;
+  position: absolute;
+  margin-left: 10px;
+}
+
+[id="heart1"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart1"] {
+  color: white;
+  cursor: pointer;
+  font-size: 2.5em;
+  align-self: center;
+  transition: color 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+[for="heart1"]:hover {
+  color: grey;
+}
+
+[for="heart1"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart1"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart1"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart1 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+  opacity: 1;
+}
+
+@keyframes heart1 {
+  0%,
+  17.5% {
+    font-size: 0;
+  }
+}
