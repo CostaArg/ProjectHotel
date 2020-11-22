@@ -2,10 +2,10 @@
 {"roomtypes":[{"name":"Single"}, {"name" : "Family Rooms"}, {"name" : "Double"}]}
 ,
 {"entries":[{  
-   "hotelName":"Hotel Lancaster",
+   "hotelName":"Hotel Du Temps",
    "rating":4,
    "city" : "Paris",
-   "thumbnail":"http://comerciodearrecife.com/wp-content/uploads/hotel-prueba-1.jpg",
+   "thumbnail":"https://i.imgur.com/WvimxTG.jpeg",
    "guestrating":4,
    "ratings":{  
       "no":8.8,
@@ -16,10 +16,10 @@
    "price":706
 },
 {  
-   "hotelName":"Prince de Galles, a Laxury...",
+   "hotelName":"Maison Albar Hotel Opera Diamond",
    "rating":5,
-   "city" : "Toulouz",
-   "thumbnail":"https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,f_auto,h_450,q_auto:eco,w_450/itemimages/42/88/42886_v5.jpeg",
+   "city" : "Toulouse",
+   "thumbnail":"https://i.imgur.com/uklG6QS.jpeg",
    "guestrating":4,
    "ratings":{  
       "no":9.0,
@@ -30,10 +30,10 @@
    "price":1213
 },
 {  
-   "hotelName":"Hotel Hilton",
+   "hotelName":"Campanile Marseille Saint Antoine",
    "rating":5,
    "city" : "Marseille",
-   "thumbnail":"https://cdn.hotelplanner.com/Common/Images/_HotelPlanner/Home-Page/fade/sld6.jpg",
+   "thumbnail":"https://i.imgur.com/bULl8yF.jpeg",
    "guestrating":4.9,
    "ratings":{  
       "no":9.8,
@@ -44,10 +44,10 @@
    "price":1500
 },
 {  
-   "hotelName":"Hotel Hilton",
+   "hotelName":"Hotel des Grands Hommes",
    "rating":5,
    "city" : "Paris",
-   "thumbnail":"https://www.parkhotelzante.com/img/1920/park-hotel-zante-tsilivi-049.jpg",
+   "thumbnail":"https://i.imgur.com/kU9lvsH.jpeg",
    "guestrating":3.9,
    "ratings":{  
       "no":9.8,
